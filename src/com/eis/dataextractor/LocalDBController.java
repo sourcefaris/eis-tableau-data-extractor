@@ -6,12 +6,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
 
+import com.eis.dataextractor.utils.StringDateUtils;
 import com.mysql.jdbc.PreparedStatement;
-import com.tableausoftware.documentation.api.rest.util.StringDateUtils;
 
 public class LocalDBController {
-	public static String SALES_PREPAID = "max_date.sales_prepaid";
-	
 	private static Connection dbConnection = DBConnection.getConnection();
 	
 	public static Timestamp getMaxDateTime(String propertyName){

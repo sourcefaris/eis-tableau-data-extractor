@@ -9920,3 +9920,1165 @@
 2015-10-26 17:40:04.104 (7944): Session1: QueryExecute: OK
 2015-10-26 17:40:04.104 (11156): tdeserver: close session, connection=tab.pipe://./pipe/{38CF493A-FE1A-47B9-90A8-3E09EC27E592}, sess_guid=1
 2015-10-26 17:40:04.104 (11136): tdeserver: exit (0)
+2015-10-26 18:51:30.341 (3420): -----------------------------------------------------------------------------
+2015-10-26 18:51:30.341 (3420): Initializing fault reporting
+2015-10-26 18:51:30.341 (3420): Fault reporting log pathname: C:\Users\farisashim\Workspace\EISDataExtractor\tdeserver32-error0000263c.log
+2015-10-26 18:51:30.341 (3420): Initializing MiniDump
+2015-10-26 18:51:30.341 (3420): Loading 'DbgHelp.dll'
+2015-10-26 18:51:30.342 (3420): Loaded 'C:\Windows\SYSTEM32\DbgHelp.dll'
+2015-10-26 18:51:30.342 (3420):   Product Name: Microsoft® Windows® Operating System
+2015-10-26 18:51:30.342 (3420):   File Version: 6.3.9600.17787 (winblue_r10.150331-1500)
+2015-10-26 18:51:30.342 (3420):   Product Version: 6.3.9600.17787
+2015-10-26 18:51:30.342 (3420): Finding function 'MiniDumpWriteDump'
+2015-10-26 18:51:30.343 (3420): Success
+2015-10-26 18:51:30.343 (3420): Registering unhandled exception filter
+2015-10-26 18:51:30.343 (3420): -----------------------------------------------------------------------------
+2015-10-26 18:51:30.343 (3420): Machine Configuration
+2015-10-26 18:51:30.343 (3420):   Max Descriptors: -1
+2015-10-26 18:51:30.344 (3420): tdeserver: server listening for incoming connections at: tab.pipe://./pipe/{B8FD46C7-98CE-4C05-8011-2C268351A3F3}
+2015-10-26 18:51:30.344 (3420): tdeserver: accepting new connection
+2015-10-26 18:51:30.344 (3420): tdeserver: new connection, connection=tab.pipe://./pipe/{B8FD46C7-98CE-4C05-8011-2C268351A3F3}
+2015-10-26 18:51:30.344 (8448): beginthread: recv, connection=tab.pipe://./pipe/{B8FD46C7-98CE-4C05-8011-2C268351A3F3}
+2015-10-26 18:51:30.344 (4848): beginthread: send, connection=tab.pipe://./pipe/{B8FD46C7-98CE-4C05-8011-2C268351A3F3}
+2015-10-26 18:51:30.344 (8448): tdeserver: open session, connection=tab.pipe://./pipe/{B8FD46C7-98CE-4C05-8011-2C268351A3F3}, sess_guid=1
+2015-10-26 18:51:30.344 (11208): Session1: QueryExecute:
+2015-10-26 18:51:30.344 (11208): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-26 18:51:30.348 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:30.348 (5184): Session1: QueryExecute:
+2015-10-26 18:51:30.348 (5184): (show schemas)
+2015-10-26 18:51:30.350 (5184): Elapsed time:0.002 sec
+2015-10-26 18:51:30.350 (5184): Compilation time:0.000 sec
+2015-10-26 18:51:30.350 (5184): Execution time:0.002 sec
+2015-10-26 18:51:30.351 (5184): Session1: QueryExecute: OK rowset_guid=1 n_columns=1
+2015-10-26 18:51:30.351 (5184): Session1: QueryExecute:
+2015-10-26 18:51:30.351 (5184): (show tables [Extract])
+2015-10-26 18:51:30.356 (5184): Elapsed time:0.005 sec
+2015-10-26 18:51:30.356 (5184): Compilation time:0.000 sec
+2015-10-26 18:51:30.356 (5184): Execution time:0.005 sec
+2015-10-26 18:51:30.356 (5184): Session1: QueryExecute: OK rowset_guid=2 n_columns=1
+2015-10-26 18:51:30.357 (5184): Session1: QueryExecute:
+2015-10-26 18:51:30.357 (5184): (top (table [Extract].[Extract]) () 0)
+2015-10-26 18:51:30.407 (5184): Elapsed time:0.050 sec
+2015-10-26 18:51:30.407 (5184): Compilation time:0.027 sec
+2015-10-26 18:51:30.407 (5184): Execution time:0.023 sec
+2015-10-26 18:51:30.410 (5184): Session1: QueryExecute: OK rowset_guid=3 n_columns=18
+2015-10-26 18:51:30.416 (5184): Session1: QueryExecute:
+2015-10-26 18:51:30.416 (5184): (create schema [DE_Temp])
+2015-10-26 18:51:30.488 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:30.488 (11208): Session1: QueryExecute:
+2015-10-26 18:51:30.488 (11208): (create table [DE_Temp].[Extract])
+2015-10-26 18:51:30.610 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:30.611 (5184): Session1: QueryExecute:
+2015-10-26 18:51:30.611 (5184): (create column [DE_Temp].[Extract].[ACTVN_DT] ( ( "builtin" "date" ) ( "factory" "builtin" ) ( "ordinal" "0" ) ))
+2015-10-26 18:51:30.869 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:30.869 (11208): Session1: QueryExecute:
+2015-10-26 18:51:30.869 (11208): (create column [DE_Temp].[Extract].[BRND_ID] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "1" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:30.958 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:30.959 (5184): Session1: QueryExecute:
+2015-10-26 18:51:30.959 (5184): (create column [DE_Temp].[Extract].[DISTRO_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "2" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:31.051 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:31.051 (11208): Session1: QueryExecute:
+2015-10-26 18:51:31.051 (11208): (create column [DE_Temp].[Extract].[DISTRO_SALES_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "3" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:31.150 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:31.150 (5184): Session1: QueryExecute:
+2015-10-26 18:51:31.150 (5184): (create column [DE_Temp].[Extract].[DISTRO_CLUSTER] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "4" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:31.244 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:31.244 (11208): Session1: QueryExecute:
+2015-10-26 18:51:31.244 (11208): (create column [DE_Temp].[Extract].[TLD_NAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "5" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:31.339 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:31.340 (5184): Session1: QueryExecute:
+2015-10-26 18:51:31.340 (5184): (create column [DE_Temp].[Extract].[PROMO_PACKAGE_NAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "6" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:31.480 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:31.480 (11208): Session1: QueryExecute:
+2015-10-26 18:51:31.480 (11208): (create column [DE_Temp].[Extract].[HLR_REGION] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "7" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:31.577 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:31.577 (5184): Session1: QueryExecute:
+2015-10-26 18:51:31.577 (5184): (create column [DE_Temp].[Extract].[HLR_BRANCH] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "8" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:31.665 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:31.666 (11208): Session1: QueryExecute:
+2015-10-26 18:51:31.666 (11208): (create column [DE_Temp].[Extract].[HLR_CITY] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "9" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:31.754 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:31.754 (5184): Session1: QueryExecute:
+2015-10-26 18:51:31.754 (5184): (create column [DE_Temp].[Extract].[CLUSTER_TYPE] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "10" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:31.848 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:31.848 (11208): Session1: QueryExecute:
+2015-10-26 18:51:31.848 (11208): (create column [DE_Temp].[Extract].[CA_REGION] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "11" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:31.952 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:31.952 (5184): Session1: QueryExecute:
+2015-10-26 18:51:31.952 (5184): (create column [DE_Temp].[Extract].[CA_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "12" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:32.038 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:32.038 (11208): Session1: QueryExecute:
+2015-10-26 18:51:32.038 (11208): (create column [DE_Temp].[Extract].[CA_SALES_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "13" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:32.140 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:32.141 (5184): Session1: QueryExecute:
+2015-10-26 18:51:32.141 (5184): (create column [DE_Temp].[Extract].[CA_CLUSTER] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "14" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:32.240 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:32.241 (11208): Session1: QueryExecute:
+2015-10-26 18:51:32.241 (11208): (create column [DE_Temp].[Extract].[NUM_OF_SALES] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "15" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:32.333 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:32.333 (5184): Session1: QueryExecute:
+2015-10-26 18:51:32.333 (5184): (create column [DE_Temp].[Extract].[PNAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "16" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:32.423 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:32.424 (11208): Session1: QueryExecute:
+2015-10-26 18:51:32.424 (11208): (create column [DE_Temp].[Extract].[TIMESTAMP] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "17" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-26 18:51:32.512 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:35.679 (5184): Session1: QueryExecute:
+2015-10-26 18:51:35.679 (5184): (package)
+2015-10-26 18:51:35.680 (5184): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-26 18:51:35.994 (5184): PackageDatabase: finished
+2015-10-26 18:51:35.994 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:35.994 (11208): Session1: QueryExecute:
+2015-10-26 18:51:35.994 (11208): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-26 18:51:35.999 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:35.999 (11208): Session1: QueryExecute:
+2015-10-26 18:51:35.999 (11208): (show schemas)
+2015-10-26 18:51:36.003 (11208): Elapsed time:0.003 sec
+2015-10-26 18:51:36.003 (11208): Compilation time:0.000 sec
+2015-10-26 18:51:36.003 (11208): Execution time:0.003 sec
+2015-10-26 18:51:36.003 (11208): Session1: QueryExecute: OK rowset_guid=4 n_columns=1
+2015-10-26 18:51:36.004 (11208): Session1: QueryExecute:
+2015-10-26 18:51:36.004 (11208): (show tables [Extract])
+2015-10-26 18:51:36.013 (11208): Elapsed time:0.009 sec
+2015-10-26 18:51:36.013 (11208): Compilation time:0.000 sec
+2015-10-26 18:51:36.013 (11208): Execution time:0.008 sec
+2015-10-26 18:51:36.013 (11208): Session1: QueryExecute: OK rowset_guid=5 n_columns=1
+2015-10-26 18:51:36.014 (11208): Session1: QueryExecute:
+2015-10-26 18:51:36.014 (11208): (top (table [Extract].[Extract]) () 0)
+2015-10-26 18:51:36.108 (11208): Elapsed time:0.094 sec
+2015-10-26 18:51:36.108 (11208): Compilation time:0.056 sec
+2015-10-26 18:51:36.108 (11208): Execution time:0.037 sec
+2015-10-26 18:51:36.114 (11208): Session1: QueryExecute: OK rowset_guid=6 n_columns=18
+2015-10-26 18:51:36.120 (11208): Session1: QueryExecute:
+2015-10-26 18:51:36.120 (11208): (append table [Extract].[Extract] (table [Extract].[Extract]) (table [DE_Temp].[Extract]))
+2015-10-26 18:51:37.910 (11208): LogScopeTime: Save::Build,2,2015-10-26 18:51:36.3020,1.61
+2015-10-26 18:51:37.910 (11208): LogScopeTime: AppendTable,0,2015-10-26 18:51:36.1710,1.74
+2015-10-26 18:51:37.910 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:37.910 (5184): Session1: QueryExecute:
+2015-10-26 18:51:37.910 (5184): (drop schema [DE_Temp] cascade)
+2015-10-26 18:51:38.062 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:38.063 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.063 (11208): (package)
+2015-10-26 18:51:38.063 (11208): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-26 18:51:38.160 (11208): PackageDatabase: finished
+2015-10-26 18:51:38.160 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:38.161 (5184): Session1: QueryExecute:
+2015-10-26 18:51:38.161 (5184): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-26 18:51:38.163 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:38.164 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.164 (11208): (show schemas)
+2015-10-26 18:51:38.168 (11208): Elapsed time:0.004 sec
+2015-10-26 18:51:38.168 (11208): Compilation time:0.000 sec
+2015-10-26 18:51:38.168 (11208): Execution time:0.004 sec
+2015-10-26 18:51:38.168 (11208): Session1: QueryExecute: OK rowset_guid=7 n_columns=1
+2015-10-26 18:51:38.169 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.169 (11208): (show tables [Extract])
+2015-10-26 18:51:38.174 (11208): Elapsed time:0.005 sec
+2015-10-26 18:51:38.174 (11208): Compilation time:0.000 sec
+2015-10-26 18:51:38.174 (11208): Execution time:0.005 sec
+2015-10-26 18:51:38.174 (11208): Session1: QueryExecute: OK rowset_guid=8 n_columns=1
+2015-10-26 18:51:38.175 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.175 (11208): (top (table [Extract].[Extract]) () 0)
+2015-10-26 18:51:38.234 (11208): Elapsed time:0.059 sec
+2015-10-26 18:51:38.234 (11208): Compilation time:0.033 sec
+2015-10-26 18:51:38.234 (11208): Execution time:0.026 sec
+2015-10-26 18:51:38.237 (11208): Session1: QueryExecute: OK rowset_guid=9 n_columns=18
+2015-10-26 18:51:38.242 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.242 (11208): (alter column [Extract].[Extract].[ACTVN_DT] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.250 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:38.250 (5184): Session1: QueryExecute:
+2015-10-26 18:51:38.250 (5184): (alter column [Extract].[Extract].[BRND_ID] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.257 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:38.258 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.258 (11208): (alter column [Extract].[Extract].[DISTRO_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.265 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:38.266 (5184): Session1: QueryExecute:
+2015-10-26 18:51:38.266 (5184): (alter column [Extract].[Extract].[DISTRO_SALES_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.272 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:38.272 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.272 (11208): (alter column [Extract].[Extract].[DISTRO_CLUSTER] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.280 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:38.280 (5184): Session1: QueryExecute:
+2015-10-26 18:51:38.280 (5184): (alter column [Extract].[Extract].[TLD_NAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.287 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:38.287 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.287 (11208): (alter column [Extract].[Extract].[PROMO_PACKAGE_NAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.293 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:38.294 (5184): Session1: QueryExecute:
+2015-10-26 18:51:38.294 (5184): (alter column [Extract].[Extract].[HLR_REGION] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.300 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:38.300 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.300 (11208): (alter column [Extract].[Extract].[HLR_BRANCH] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.306 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:38.306 (5184): Session1: QueryExecute:
+2015-10-26 18:51:38.306 (5184): (alter column [Extract].[Extract].[HLR_CITY] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.313 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:38.314 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.314 (11208): (alter column [Extract].[Extract].[CLUSTER_TYPE] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.319 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:38.319 (5184): Session1: QueryExecute:
+2015-10-26 18:51:38.319 (5184): (alter column [Extract].[Extract].[CA_REGION] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.325 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:38.325 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.325 (11208): (alter column [Extract].[Extract].[CA_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.330 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:38.330 (5184): Session1: QueryExecute:
+2015-10-26 18:51:38.330 (5184): (alter column [Extract].[Extract].[CA_SALES_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.335 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:38.335 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.335 (11208): (alter column [Extract].[Extract].[CA_CLUSTER] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.342 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:38.343 (5184): Session1: QueryExecute:
+2015-10-26 18:51:38.343 (5184): (alter column [Extract].[Extract].[NUM_OF_SALES] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.347 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:38.347 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.347 (11208): (alter column [Extract].[Extract].[PNAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.354 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:38.354 (5184): Session1: QueryExecute:
+2015-10-26 18:51:38.354 (5184): (alter column [Extract].[Extract].[TIMESTAMP] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-26 18:51:38.359 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:38.359 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.359 (11208): (top (table [Extract].[Extract]) () 0)
+2015-10-26 18:51:38.380 (11208): Elapsed time:0.021 sec
+2015-10-26 18:51:38.380 (11208): Compilation time:0.014 sec
+2015-10-26 18:51:38.380 (11208): Execution time:0.007 sec
+2015-10-26 18:51:38.382 (11208): Session1: QueryExecute: OK rowset_guid=10 n_columns=18
+2015-10-26 18:51:38.386 (11208): Session1: QueryExecute:
+2015-10-26 18:51:38.386 (11208): (sort [Extract].[Extract] ( ( [ACTVN_DT] asc) ( [BRND_ID] asc) ( [DISTRO_AREA] asc) ( [DISTRO_SALES_AREA] asc) ( [DISTRO_CLUSTER] asc) ( [TLD_NAME] asc) ( [PROMO_PACKAGE_NAME] asc) ( [CLUSTER_TYPE] asc) ( [CA_CLUSTER] asc) ( [NUM_OF_SALES] asc) ( [PNAME] asc) ( [TIMESTAMP] asc) ) )
+2015-10-26 18:51:39.894 (11208): LogScopeTime: Save::Build,2,2015-10-26 18:51:38.3960,1.50
+2015-10-26 18:51:39.895 (11208): Session1: QueryExecute: OK
+2015-10-26 18:51:39.896 (5184): Session1: QueryExecute:
+2015-10-26 18:51:39.896 (5184): (package)
+2015-10-26 18:51:39.896 (5184): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-26 18:51:40.035 (5184): PackageDatabase: finished
+2015-10-26 18:51:40.035 (5184): Session1: QueryExecute: OK
+2015-10-26 18:51:40.036 (8448): tdeserver: close session, connection=tab.pipe://./pipe/{B8FD46C7-98CE-4C05-8011-2C268351A3F3}, sess_guid=1
+2015-10-26 18:51:40.036 (3420): tdeserver: exit (0)
+2015-10-27 05:22:23.528 (18060): -----------------------------------------------------------------------------
+2015-10-27 05:22:23.528 (18060): Initializing fault reporting
+2015-10-27 05:22:23.528 (18060): Fault reporting log pathname: C:\Users\farisashim\Workspace\EISDataExtractor\tdeserver32-error00003a08.log
+2015-10-27 05:22:23.528 (18060): Initializing MiniDump
+2015-10-27 05:22:23.528 (18060): Loading 'DbgHelp.dll'
+2015-10-27 05:22:23.529 (18060): Loaded 'C:\Windows\SYSTEM32\DbgHelp.dll'
+2015-10-27 05:22:23.529 (18060):   Product Name: Microsoft® Windows® Operating System
+2015-10-27 05:22:23.529 (18060):   File Version: 6.3.9600.17787 (winblue_r10.150331-1500)
+2015-10-27 05:22:23.529 (18060):   Product Version: 6.3.9600.17787
+2015-10-27 05:22:23.529 (18060): Finding function 'MiniDumpWriteDump'
+2015-10-27 05:22:23.529 (18060): Success
+2015-10-27 05:22:23.529 (18060): Registering unhandled exception filter
+2015-10-27 05:22:23.529 (18060): -----------------------------------------------------------------------------
+2015-10-27 05:22:23.529 (18060): Machine Configuration
+2015-10-27 05:22:23.529 (18060):   Max Descriptors: -1
+2015-10-27 05:22:23.530 (18060): tdeserver: server listening for incoming connections at: tab.pipe://./pipe/{79E29BEB-8EAB-4269-8A17-97C7E8D5428F}
+2015-10-27 05:22:23.530 (18060): tdeserver: accepting new connection
+2015-10-27 05:22:23.530 (18060): tdeserver: new connection, connection=tab.pipe://./pipe/{79E29BEB-8EAB-4269-8A17-97C7E8D5428F}
+2015-10-27 05:22:23.530 (7232): beginthread: recv, connection=tab.pipe://./pipe/{79E29BEB-8EAB-4269-8A17-97C7E8D5428F}
+2015-10-27 05:22:23.530 (11728): beginthread: send, connection=tab.pipe://./pipe/{79E29BEB-8EAB-4269-8A17-97C7E8D5428F}
+2015-10-27 05:22:23.530 (7232): tdeserver: open session, connection=tab.pipe://./pipe/{79E29BEB-8EAB-4269-8A17-97C7E8D5428F}, sess_guid=1
+2015-10-27 05:22:23.530 (14676): Session1: QueryExecute:
+2015-10-27 05:22:23.530 (14676): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:22:23.587 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:23.587 (12696): Session1: QueryExecute:
+2015-10-27 05:22:23.587 (12696): (show schemas)
+2015-10-27 05:22:23.605 (12696): Elapsed time:0.002 sec
+2015-10-27 05:22:23.605 (12696): Compilation time:0.000 sec
+2015-10-27 05:22:23.605 (12696): Execution time:0.002 sec
+2015-10-27 05:22:23.605 (12696): Session1: QueryExecute: OK rowset_guid=1 n_columns=1
+2015-10-27 05:22:23.625 (12696): Session1: QueryExecute:
+2015-10-27 05:22:23.625 (12696): (show tables [Extract])
+2015-10-27 05:22:23.659 (12696): Elapsed time:0.034 sec
+2015-10-27 05:22:23.659 (12696): Compilation time:0.000 sec
+2015-10-27 05:22:23.659 (12696): Execution time:0.034 sec
+2015-10-27 05:22:23.659 (12696): Session1: QueryExecute: OK rowset_guid=2 n_columns=1
+2015-10-27 05:22:23.660 (12696): Session1: QueryExecute:
+2015-10-27 05:22:23.660 (12696): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:22:23.990 (12696): Elapsed time:0.330 sec
+2015-10-27 05:22:23.990 (12696): Compilation time:0.299 sec
+2015-10-27 05:22:23.991 (12696): Execution time:0.030 sec
+2015-10-27 05:22:23.994 (12696): Session1: QueryExecute: OK rowset_guid=3 n_columns=18
+2015-10-27 05:22:24.030 (12696): Session1: QueryExecute:
+2015-10-27 05:22:24.030 (12696): (create schema [DE_Temp])
+2015-10-27 05:22:24.099 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:24.099 (14676): Session1: QueryExecute:
+2015-10-27 05:22:24.099 (14676): (create table [DE_Temp].[Extract])
+2015-10-27 05:22:24.318 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:24.318 (12696): Session1: QueryExecute:
+2015-10-27 05:22:24.318 (12696): (create column [DE_Temp].[Extract].[ACTVN_DT] ( ( "builtin" "date" ) ( "factory" "builtin" ) ( "ordinal" "0" ) ))
+2015-10-27 05:22:24.821 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:24.822 (14676): Session1: QueryExecute:
+2015-10-27 05:22:24.822 (14676): (create column [DE_Temp].[Extract].[BRND_ID] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "1" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:24.934 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:24.934 (12696): Session1: QueryExecute:
+2015-10-27 05:22:24.934 (12696): (create column [DE_Temp].[Extract].[DISTRO_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "2" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:25.020 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:25.022 (14676): Session1: QueryExecute:
+2015-10-27 05:22:25.022 (14676): (create column [DE_Temp].[Extract].[DISTRO_SALES_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "3" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:25.102 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:25.102 (12696): Session1: QueryExecute:
+2015-10-27 05:22:25.102 (12696): (create column [DE_Temp].[Extract].[DISTRO_CLUSTER] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "4" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:25.246 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:25.247 (14676): Session1: QueryExecute:
+2015-10-27 05:22:25.247 (14676): (create column [DE_Temp].[Extract].[TLD_NAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "5" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:25.384 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:25.384 (12696): Session1: QueryExecute:
+2015-10-27 05:22:25.384 (12696): (create column [DE_Temp].[Extract].[PROMO_PACKAGE_NAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "6" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:25.512 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:25.512 (14676): Session1: QueryExecute:
+2015-10-27 05:22:25.512 (14676): (create column [DE_Temp].[Extract].[HLR_REGION] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "7" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:25.622 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:25.623 (12696): Session1: QueryExecute:
+2015-10-27 05:22:25.623 (12696): (create column [DE_Temp].[Extract].[HLR_BRANCH] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "8" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:25.815 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:25.815 (14676): Session1: QueryExecute:
+2015-10-27 05:22:25.815 (14676): (create column [DE_Temp].[Extract].[HLR_CITY] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "9" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:25.934 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:25.935 (12696): Session1: QueryExecute:
+2015-10-27 05:22:25.935 (12696): (create column [DE_Temp].[Extract].[CLUSTER_TYPE] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "10" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:26.212 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:26.212 (14676): Session1: QueryExecute:
+2015-10-27 05:22:26.212 (14676): (create column [DE_Temp].[Extract].[CA_REGION] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "11" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:26.346 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:26.346 (12696): Session1: QueryExecute:
+2015-10-27 05:22:26.346 (12696): (create column [DE_Temp].[Extract].[CA_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "12" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:26.453 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:26.456 (14676): Session1: QueryExecute:
+2015-10-27 05:22:26.456 (14676): (create column [DE_Temp].[Extract].[CA_SALES_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "13" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:26.729 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:26.729 (12696): Session1: QueryExecute:
+2015-10-27 05:22:26.729 (12696): (create column [DE_Temp].[Extract].[CA_CLUSTER] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "14" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:26.834 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:26.835 (14676): Session1: QueryExecute:
+2015-10-27 05:22:26.835 (14676): (create column [DE_Temp].[Extract].[NUM_OF_SALES] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "15" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:26.952 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:26.953 (12696): Session1: QueryExecute:
+2015-10-27 05:22:26.953 (12696): (create column [DE_Temp].[Extract].[PNAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "16" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:27.051 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:27.051 (14676): Session1: QueryExecute:
+2015-10-27 05:22:27.051 (14676): (create column [DE_Temp].[Extract].[TIMESTAMP] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "17" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:22:27.157 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:28.620 (12696): Session1: QueryExecute:
+2015-10-27 05:22:28.620 (12696): (package)
+2015-10-27 05:22:28.664 (12696): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:22:29.084 (12696): PackageDatabase: finished
+2015-10-27 05:22:29.084 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:29.085 (14676): Session1: QueryExecute:
+2015-10-27 05:22:29.085 (14676): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:22:29.087 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:29.087 (12696): Session1: QueryExecute:
+2015-10-27 05:22:29.087 (12696): (show schemas)
+2015-10-27 05:22:29.089 (12696): Elapsed time:0.002 sec
+2015-10-27 05:22:29.089 (12696): Compilation time:0.000 sec
+2015-10-27 05:22:29.089 (12696): Execution time:0.002 sec
+2015-10-27 05:22:29.090 (12696): Session1: QueryExecute: OK rowset_guid=4 n_columns=1
+2015-10-27 05:22:29.090 (12696): Session1: QueryExecute:
+2015-10-27 05:22:29.090 (12696): (show tables [Extract])
+2015-10-27 05:22:29.095 (12696): Elapsed time:0.005 sec
+2015-10-27 05:22:29.095 (12696): Compilation time:0.000 sec
+2015-10-27 05:22:29.095 (12696): Execution time:0.005 sec
+2015-10-27 05:22:29.096 (12696): Session1: QueryExecute: OK rowset_guid=5 n_columns=1
+2015-10-27 05:22:29.096 (12696): Session1: QueryExecute:
+2015-10-27 05:22:29.096 (12696): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:22:29.238 (12696): Elapsed time:0.142 sec
+2015-10-27 05:22:29.238 (12696): Compilation time:0.030 sec
+2015-10-27 05:22:29.238 (12696): Execution time:0.113 sec
+2015-10-27 05:22:29.242 (12696): Session1: QueryExecute: OK rowset_guid=6 n_columns=18
+2015-10-27 05:22:29.245 (12696): Session1: QueryExecute:
+2015-10-27 05:22:29.245 (12696): (append table [Extract].[Extract] (table [Extract].[Extract]) (table [DE_Temp].[Extract]))
+2015-10-27 05:22:31.123 (12696): LogScopeTime: Save::Build,2,2015-10-27 05:22:29.8070,1.32
+2015-10-27 05:22:31.124 (12696): LogScopeTime: AppendTable,0,2015-10-27 05:22:29.5430,1.58
+2015-10-27 05:22:31.124 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:31.124 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.124 (14676): (drop schema [DE_Temp] cascade)
+2015-10-27 05:22:31.299 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:31.300 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.300 (12696): (package)
+2015-10-27 05:22:31.300 (12696): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:22:31.402 (12696): PackageDatabase: finished
+2015-10-27 05:22:31.402 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:31.403 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.403 (14676): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:22:31.405 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:31.405 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.405 (14676): (show schemas)
+2015-10-27 05:22:31.407 (14676): Elapsed time:0.002 sec
+2015-10-27 05:22:31.407 (14676): Compilation time:0.000 sec
+2015-10-27 05:22:31.407 (14676): Execution time:0.002 sec
+2015-10-27 05:22:31.407 (14676): Session1: QueryExecute: OK rowset_guid=7 n_columns=1
+2015-10-27 05:22:31.408 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.408 (14676): (show tables [Extract])
+2015-10-27 05:22:31.412 (14676): Elapsed time:0.005 sec
+2015-10-27 05:22:31.412 (14676): Compilation time:0.000 sec
+2015-10-27 05:22:31.412 (14676): Execution time:0.005 sec
+2015-10-27 05:22:31.413 (14676): Session1: QueryExecute: OK rowset_guid=8 n_columns=1
+2015-10-27 05:22:31.413 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.413 (14676): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:22:31.468 (14676): Elapsed time:0.054 sec
+2015-10-27 05:22:31.468 (14676): Compilation time:0.031 sec
+2015-10-27 05:22:31.468 (14676): Execution time:0.023 sec
+2015-10-27 05:22:31.471 (14676): Session1: QueryExecute: OK rowset_guid=9 n_columns=18
+2015-10-27 05:22:31.474 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.474 (12696): (alter column [Extract].[Extract].[ACTVN_DT] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.519 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:31.519 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.519 (14676): (alter column [Extract].[Extract].[BRND_ID] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.525 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:31.525 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.525 (12696): (alter column [Extract].[Extract].[DISTRO_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.531 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:31.531 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.531 (14676): (alter column [Extract].[Extract].[DISTRO_SALES_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.537 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:31.537 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.537 (12696): (alter column [Extract].[Extract].[DISTRO_CLUSTER] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.543 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:31.543 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.543 (14676): (alter column [Extract].[Extract].[TLD_NAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.549 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:31.549 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.549 (12696): (alter column [Extract].[Extract].[PROMO_PACKAGE_NAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.554 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:31.555 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.555 (14676): (alter column [Extract].[Extract].[HLR_REGION] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.560 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:31.560 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.560 (12696): (alter column [Extract].[Extract].[HLR_BRANCH] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.566 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:31.566 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.566 (14676): (alter column [Extract].[Extract].[HLR_CITY] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.572 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:31.572 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.572 (12696): (alter column [Extract].[Extract].[CLUSTER_TYPE] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.577 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:31.578 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.578 (14676): (alter column [Extract].[Extract].[CA_REGION] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.583 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:31.583 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.583 (12696): (alter column [Extract].[Extract].[CA_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.589 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:31.589 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.589 (14676): (alter column [Extract].[Extract].[CA_SALES_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.594 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:31.595 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.595 (12696): (alter column [Extract].[Extract].[CA_CLUSTER] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.600 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:31.601 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.601 (14676): (alter column [Extract].[Extract].[NUM_OF_SALES] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.606 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:31.606 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.606 (12696): (alter column [Extract].[Extract].[PNAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.612 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:31.612 (14676): Session1: QueryExecute:
+2015-10-27 05:22:31.612 (14676): (alter column [Extract].[Extract].[TIMESTAMP] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:22:31.617 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:31.617 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.617 (12696): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:22:31.638 (12696): Elapsed time:0.020 sec
+2015-10-27 05:22:31.638 (12696): Compilation time:0.012 sec
+2015-10-27 05:22:31.638 (12696): Execution time:0.008 sec
+2015-10-27 05:22:31.640 (12696): Session1: QueryExecute: OK rowset_guid=10 n_columns=18
+2015-10-27 05:22:31.643 (12696): Session1: QueryExecute:
+2015-10-27 05:22:31.643 (12696): (sort [Extract].[Extract] ( ( [ACTVN_DT] asc) ( [BRND_ID] asc) ( [DISTRO_AREA] asc) ( [DISTRO_SALES_AREA] asc) ( [DISTRO_CLUSTER] asc) ( [TLD_NAME] asc) ( [PROMO_PACKAGE_NAME] asc) ( [CLUSTER_TYPE] asc) ( [CA_CLUSTER] asc) ( [NUM_OF_SALES] asc) ( [PNAME] asc) ( [TIMESTAMP] asc) ) )
+2015-10-27 05:22:32.969 (12696): LogScopeTime: Save::Build,2,2015-10-27 05:22:31.7090,1.26
+2015-10-27 05:22:32.969 (12696): Session1: QueryExecute: OK
+2015-10-27 05:22:32.969 (14676): Session1: QueryExecute:
+2015-10-27 05:22:32.969 (14676): (package)
+2015-10-27 05:22:32.969 (14676): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:22:33.033 (14676): PackageDatabase: finished
+2015-10-27 05:22:33.033 (14676): Session1: QueryExecute: OK
+2015-10-27 05:22:33.033 (7232): tdeserver: close session, connection=tab.pipe://./pipe/{79E29BEB-8EAB-4269-8A17-97C7E8D5428F}, sess_guid=1
+2015-10-27 05:22:33.033 (18060): tdeserver: exit (0)
+2015-10-27 05:26:02.585 (18828): -----------------------------------------------------------------------------
+2015-10-27 05:26:02.585 (18828): Initializing fault reporting
+2015-10-27 05:26:02.585 (18828): Fault reporting log pathname: C:\Users\farisashim\Workspace\EISDataExtractor\tdeserver32-error000041d8.log
+2015-10-27 05:26:02.585 (18828): Initializing MiniDump
+2015-10-27 05:26:02.585 (18828): Loading 'DbgHelp.dll'
+2015-10-27 05:26:02.585 (18828): Loaded 'C:\Windows\SYSTEM32\DbgHelp.dll'
+2015-10-27 05:26:02.586 (18828):   Product Name: Microsoft® Windows® Operating System
+2015-10-27 05:26:02.586 (18828):   File Version: 6.3.9600.17787 (winblue_r10.150331-1500)
+2015-10-27 05:26:02.586 (18828):   Product Version: 6.3.9600.17787
+2015-10-27 05:26:02.586 (18828): Finding function 'MiniDumpWriteDump'
+2015-10-27 05:26:02.586 (18828): Success
+2015-10-27 05:26:02.586 (18828): Registering unhandled exception filter
+2015-10-27 05:26:02.586 (18828): -----------------------------------------------------------------------------
+2015-10-27 05:26:02.586 (18828): Machine Configuration
+2015-10-27 05:26:02.586 (18828):   Max Descriptors: -1
+2015-10-27 05:26:02.586 (18828): tdeserver: server listening for incoming connections at: tab.pipe://./pipe/{EFB0AE0E-AEE2-4AB2-9B26-06CD3A3D6858}
+2015-10-27 05:26:02.586 (18828): tdeserver: accepting new connection
+2015-10-27 05:26:02.587 (17084): beginthread: recv, connection=tab.pipe://./pipe/{EFB0AE0E-AEE2-4AB2-9B26-06CD3A3D6858}
+2015-10-27 05:26:02.587 (18828): tdeserver: new connection, connection=tab.pipe://./pipe/{EFB0AE0E-AEE2-4AB2-9B26-06CD3A3D6858}
+2015-10-27 05:26:02.587 (16780): beginthread: send, connection=tab.pipe://./pipe/{EFB0AE0E-AEE2-4AB2-9B26-06CD3A3D6858}
+2015-10-27 05:26:02.587 (17084): tdeserver: open session, connection=tab.pipe://./pipe/{EFB0AE0E-AEE2-4AB2-9B26-06CD3A3D6858}, sess_guid=1
+2015-10-27 05:26:02.587 (16852): Session1: QueryExecute:
+2015-10-27 05:26:02.587 (16852): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:26:02.589 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:02.589 (16788): Session1: QueryExecute:
+2015-10-27 05:26:02.589 (16788): (show schemas)
+2015-10-27 05:26:02.590 (16788): Elapsed time:0.001 sec
+2015-10-27 05:26:02.590 (16788): Compilation time:0.000 sec
+2015-10-27 05:26:02.590 (16788): Execution time:0.001 sec
+2015-10-27 05:26:02.590 (16788): Session1: QueryExecute: OK rowset_guid=1 n_columns=1
+2015-10-27 05:26:02.591 (16788): Session1: QueryExecute:
+2015-10-27 05:26:02.591 (16788): (show tables [Extract])
+2015-10-27 05:26:02.594 (16788): Elapsed time:0.003 sec
+2015-10-27 05:26:02.594 (16788): Compilation time:0.000 sec
+2015-10-27 05:26:02.594 (16788): Execution time:0.003 sec
+2015-10-27 05:26:02.594 (16788): Session1: QueryExecute: OK rowset_guid=2 n_columns=1
+2015-10-27 05:26:02.595 (16788): Session1: QueryExecute:
+2015-10-27 05:26:02.595 (16788): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:26:02.626 (16788): Elapsed time:0.031 sec
+2015-10-27 05:26:02.626 (16788): Compilation time:0.017 sec
+2015-10-27 05:26:02.626 (16788): Execution time:0.013 sec
+2015-10-27 05:26:02.628 (16788): Session1: QueryExecute: OK rowset_guid=3 n_columns=18
+2015-10-27 05:26:02.631 (16788): Session1: QueryExecute:
+2015-10-27 05:26:02.631 (16788): (create schema [DE_Temp])
+2015-10-27 05:26:02.678 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:02.678 (16852): Session1: QueryExecute:
+2015-10-27 05:26:02.678 (16852): (create table [DE_Temp].[Extract])
+2015-10-27 05:26:02.827 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:02.828 (16788): Session1: QueryExecute:
+2015-10-27 05:26:02.828 (16788): (create column [DE_Temp].[Extract].[ACTVN_DT] ( ( "builtin" "date" ) ( "factory" "builtin" ) ( "ordinal" "0" ) ))
+2015-10-27 05:26:03.087 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:03.087 (16852): Session1: QueryExecute:
+2015-10-27 05:26:03.087 (16852): (create column [DE_Temp].[Extract].[BRND_ID] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "1" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:03.229 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:03.229 (16788): Session1: QueryExecute:
+2015-10-27 05:26:03.229 (16788): (create column [DE_Temp].[Extract].[DISTRO_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "2" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:03.317 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:03.317 (16852): Session1: QueryExecute:
+2015-10-27 05:26:03.317 (16852): (create column [DE_Temp].[Extract].[DISTRO_SALES_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "3" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:03.377 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:03.377 (16788): Session1: QueryExecute:
+2015-10-27 05:26:03.377 (16788): (create column [DE_Temp].[Extract].[DISTRO_CLUSTER] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "4" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:03.484 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:03.484 (16852): Session1: QueryExecute:
+2015-10-27 05:26:03.484 (16852): (create column [DE_Temp].[Extract].[TLD_NAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "5" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:03.613 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:03.613 (16788): Session1: QueryExecute:
+2015-10-27 05:26:03.613 (16788): (create column [DE_Temp].[Extract].[PROMO_PACKAGE_NAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "6" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:03.695 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:03.695 (16852): Session1: QueryExecute:
+2015-10-27 05:26:03.695 (16852): (create column [DE_Temp].[Extract].[HLR_REGION] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "7" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:03.755 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:03.755 (16788): Session1: QueryExecute:
+2015-10-27 05:26:03.755 (16788): (create column [DE_Temp].[Extract].[HLR_BRANCH] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "8" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:04.022 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:04.022 (16852): Session1: QueryExecute:
+2015-10-27 05:26:04.022 (16852): (create column [DE_Temp].[Extract].[HLR_CITY] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "9" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:04.271 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:04.271 (16788): Session1: QueryExecute:
+2015-10-27 05:26:04.271 (16788): (create column [DE_Temp].[Extract].[CLUSTER_TYPE] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "10" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:04.353 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:04.354 (16852): Session1: QueryExecute:
+2015-10-27 05:26:04.354 (16852): (create column [DE_Temp].[Extract].[CA_REGION] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "11" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:04.425 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:04.425 (16788): Session1: QueryExecute:
+2015-10-27 05:26:04.425 (16788): (create column [DE_Temp].[Extract].[CA_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "12" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:04.496 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:04.497 (16852): Session1: QueryExecute:
+2015-10-27 05:26:04.497 (16852): (create column [DE_Temp].[Extract].[CA_SALES_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "13" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:04.560 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:04.560 (16788): Session1: QueryExecute:
+2015-10-27 05:26:04.560 (16788): (create column [DE_Temp].[Extract].[CA_CLUSTER] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "14" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:04.623 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:04.623 (16852): Session1: QueryExecute:
+2015-10-27 05:26:04.623 (16852): (create column [DE_Temp].[Extract].[NUM_OF_SALES] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "15" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:04.684 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:04.684 (16788): Session1: QueryExecute:
+2015-10-27 05:26:04.684 (16788): (create column [DE_Temp].[Extract].[PNAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "16" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:04.748 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:04.748 (16852): Session1: QueryExecute:
+2015-10-27 05:26:04.748 (16852): (create column [DE_Temp].[Extract].[TIMESTAMP] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "17" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:04.812 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:04.990 (16788): Session1: QueryExecute:
+2015-10-27 05:26:04.990 (16788): (package)
+2015-10-27 05:26:04.990 (16788): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:26:05.087 (16788): PackageDatabase: finished
+2015-10-27 05:26:05.087 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:05.087 (16852): Session1: QueryExecute:
+2015-10-27 05:26:05.087 (16852): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:26:05.089 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:05.089 (16788): Session1: QueryExecute:
+2015-10-27 05:26:05.089 (16788): (show schemas)
+2015-10-27 05:26:05.091 (16788): Elapsed time:0.001 sec
+2015-10-27 05:26:05.091 (16788): Compilation time:0.000 sec
+2015-10-27 05:26:05.091 (16788): Execution time:0.001 sec
+2015-10-27 05:26:05.091 (16788): Session1: QueryExecute: OK rowset_guid=4 n_columns=1
+2015-10-27 05:26:05.092 (16788): Session1: QueryExecute:
+2015-10-27 05:26:05.092 (16788): (show tables [Extract])
+2015-10-27 05:26:05.095 (16788): Elapsed time:0.003 sec
+2015-10-27 05:26:05.095 (16788): Compilation time:0.000 sec
+2015-10-27 05:26:05.095 (16788): Execution time:0.003 sec
+2015-10-27 05:26:05.095 (16788): Session1: QueryExecute: OK rowset_guid=5 n_columns=1
+2015-10-27 05:26:05.096 (16788): Session1: QueryExecute:
+2015-10-27 05:26:05.096 (16788): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:26:05.127 (16788): Elapsed time:0.031 sec
+2015-10-27 05:26:05.127 (16788): Compilation time:0.016 sec
+2015-10-27 05:26:05.127 (16788): Execution time:0.014 sec
+2015-10-27 05:26:05.128 (16788): Session1: QueryExecute: OK rowset_guid=6 n_columns=18
+2015-10-27 05:26:05.130 (16788): Session1: QueryExecute:
+2015-10-27 05:26:05.130 (16788): (append table [Extract].[Extract] (table [Extract].[Extract]) (table [DE_Temp].[Extract]))
+2015-10-27 05:26:06.714 (16788): LogScopeTime: Save::Build,2,2015-10-27 05:26:05.1860,1.53
+2015-10-27 05:26:06.714 (16788): LogScopeTime: AppendTable,0,2015-10-27 05:26:05.1490,1.56
+2015-10-27 05:26:06.714 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:06.715 (16852): Session1: QueryExecute:
+2015-10-27 05:26:06.715 (16852): (drop schema [DE_Temp] cascade)
+2015-10-27 05:26:06.837 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:06.837 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.837 (16788): (package)
+2015-10-27 05:26:06.837 (16788): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:26:06.894 (16788): PackageDatabase: finished
+2015-10-27 05:26:06.894 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:06.895 (16852): Session1: QueryExecute:
+2015-10-27 05:26:06.895 (16852): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:26:06.896 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:06.896 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.896 (16788): (show schemas)
+2015-10-27 05:26:06.898 (16788): Elapsed time:0.001 sec
+2015-10-27 05:26:06.898 (16788): Compilation time:0.000 sec
+2015-10-27 05:26:06.898 (16788): Execution time:0.001 sec
+2015-10-27 05:26:06.898 (16788): Session1: QueryExecute: OK rowset_guid=7 n_columns=1
+2015-10-27 05:26:06.899 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.899 (16788): (show tables [Extract])
+2015-10-27 05:26:06.901 (16788): Elapsed time:0.003 sec
+2015-10-27 05:26:06.901 (16788): Compilation time:0.000 sec
+2015-10-27 05:26:06.901 (16788): Execution time:0.003 sec
+2015-10-27 05:26:06.902 (16788): Session1: QueryExecute: OK rowset_guid=8 n_columns=1
+2015-10-27 05:26:06.902 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.902 (16788): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:26:06.932 (16788): Elapsed time:0.030 sec
+2015-10-27 05:26:06.932 (16788): Compilation time:0.016 sec
+2015-10-27 05:26:06.932 (16788): Execution time:0.014 sec
+2015-10-27 05:26:06.934 (16788): Session1: QueryExecute: OK rowset_guid=9 n_columns=18
+2015-10-27 05:26:06.936 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.936 (16788): (alter column [Extract].[Extract].[ACTVN_DT] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.940 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:06.940 (16852): Session1: QueryExecute:
+2015-10-27 05:26:06.940 (16852): (alter column [Extract].[Extract].[BRND_ID] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.944 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:06.944 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.944 (16788): (alter column [Extract].[Extract].[DISTRO_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.947 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:06.947 (16852): Session1: QueryExecute:
+2015-10-27 05:26:06.947 (16852): (alter column [Extract].[Extract].[DISTRO_SALES_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.950 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:06.950 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.950 (16788): (alter column [Extract].[Extract].[DISTRO_CLUSTER] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.953 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:06.954 (16852): Session1: QueryExecute:
+2015-10-27 05:26:06.954 (16852): (alter column [Extract].[Extract].[TLD_NAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.956 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:06.957 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.957 (16788): (alter column [Extract].[Extract].[PROMO_PACKAGE_NAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.961 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:06.961 (16852): Session1: QueryExecute:
+2015-10-27 05:26:06.961 (16852): (alter column [Extract].[Extract].[HLR_REGION] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.964 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:06.964 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.964 (16788): (alter column [Extract].[Extract].[HLR_BRANCH] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.968 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:06.968 (16852): Session1: QueryExecute:
+2015-10-27 05:26:06.968 (16852): (alter column [Extract].[Extract].[HLR_CITY] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.971 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:06.971 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.971 (16788): (alter column [Extract].[Extract].[CLUSTER_TYPE] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.974 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:06.974 (16852): Session1: QueryExecute:
+2015-10-27 05:26:06.974 (16852): (alter column [Extract].[Extract].[CA_REGION] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.977 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:06.977 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.977 (16788): (alter column [Extract].[Extract].[CA_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.980 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:06.981 (16852): Session1: QueryExecute:
+2015-10-27 05:26:06.981 (16852): (alter column [Extract].[Extract].[CA_SALES_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.984 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:06.984 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.984 (16788): (alter column [Extract].[Extract].[CA_CLUSTER] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.987 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:06.987 (16852): Session1: QueryExecute:
+2015-10-27 05:26:06.987 (16852): (alter column [Extract].[Extract].[NUM_OF_SALES] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.990 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:06.990 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.990 (16788): (alter column [Extract].[Extract].[PNAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.993 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:06.994 (16852): Session1: QueryExecute:
+2015-10-27 05:26:06.994 (16852): (alter column [Extract].[Extract].[TIMESTAMP] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:06.997 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:06.997 (16788): Session1: QueryExecute:
+2015-10-27 05:26:06.997 (16788): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:26:07.023 (16788): Elapsed time:0.026 sec
+2015-10-27 05:26:07.023 (16788): Compilation time:0.015 sec
+2015-10-27 05:26:07.023 (16788): Execution time:0.012 sec
+2015-10-27 05:26:07.027 (16788): Session1: QueryExecute: OK rowset_guid=10 n_columns=18
+2015-10-27 05:26:07.029 (16788): Session1: QueryExecute:
+2015-10-27 05:26:07.029 (16788): (sort [Extract].[Extract] ( ( [ACTVN_DT] asc) ( [BRND_ID] asc) ( [DISTRO_AREA] asc) ( [DISTRO_SALES_AREA] asc) ( [DISTRO_CLUSTER] asc) ( [TLD_NAME] asc) ( [PROMO_PACKAGE_NAME] asc) ( [CLUSTER_TYPE] asc) ( [CA_CLUSTER] asc) ( [NUM_OF_SALES] asc) ( [PNAME] asc) ( [TIMESTAMP] asc) ) )
+2015-10-27 05:26:08.696 (16788): LogScopeTime: Save::Build,2,2015-10-27 05:26:07.0400,1.66
+2015-10-27 05:26:08.696 (16788): Session1: QueryExecute: OK
+2015-10-27 05:26:08.697 (16852): Session1: QueryExecute:
+2015-10-27 05:26:08.697 (16852): (package)
+2015-10-27 05:26:08.697 (16852): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:26:08.760 (16852): PackageDatabase: finished
+2015-10-27 05:26:08.761 (16852): Session1: QueryExecute: OK
+2015-10-27 05:26:08.761 (17084): tdeserver: close session, connection=tab.pipe://./pipe/{EFB0AE0E-AEE2-4AB2-9B26-06CD3A3D6858}, sess_guid=1
+2015-10-27 05:26:08.761 (18828): tdeserver: exit (0)
+2015-10-27 05:26:31.986 (20360): -----------------------------------------------------------------------------
+2015-10-27 05:26:31.986 (20360): Initializing fault reporting
+2015-10-27 05:26:31.986 (20360): Fault reporting log pathname: C:\Users\farisashim\Workspace\EISDataExtractor\tdeserver32-error000047dc.log
+2015-10-27 05:26:31.986 (20360): Initializing MiniDump
+2015-10-27 05:26:31.986 (20360): Loading 'DbgHelp.dll'
+2015-10-27 05:26:31.987 (20360): Loaded 'C:\Windows\SYSTEM32\DbgHelp.dll'
+2015-10-27 05:26:31.987 (20360):   Product Name: Microsoft® Windows® Operating System
+2015-10-27 05:26:31.987 (20360):   File Version: 6.3.9600.17787 (winblue_r10.150331-1500)
+2015-10-27 05:26:31.987 (20360):   Product Version: 6.3.9600.17787
+2015-10-27 05:26:31.987 (20360): Finding function 'MiniDumpWriteDump'
+2015-10-27 05:26:31.987 (20360): Success
+2015-10-27 05:26:31.987 (20360): Registering unhandled exception filter
+2015-10-27 05:26:31.988 (20360): -----------------------------------------------------------------------------
+2015-10-27 05:26:31.988 (20360): Machine Configuration
+2015-10-27 05:26:31.988 (20360):   Max Descriptors: -1
+2015-10-27 05:26:31.988 (20360): tdeserver: server listening for incoming connections at: tab.pipe://./pipe/{2BCAC161-76B9-47D2-A9FC-154A41FFF27C}
+2015-10-27 05:26:31.988 (20360): tdeserver: accepting new connection
+2015-10-27 05:26:31.988 (20360): tdeserver: new connection, connection=tab.pipe://./pipe/{2BCAC161-76B9-47D2-A9FC-154A41FFF27C}
+2015-10-27 05:26:31.988 (16476): beginthread: recv, connection=tab.pipe://./pipe/{2BCAC161-76B9-47D2-A9FC-154A41FFF27C}
+2015-10-27 05:26:31.988 (12824): beginthread: send, connection=tab.pipe://./pipe/{2BCAC161-76B9-47D2-A9FC-154A41FFF27C}
+2015-10-27 05:26:31.988 (16476): tdeserver: open session, connection=tab.pipe://./pipe/{2BCAC161-76B9-47D2-A9FC-154A41FFF27C}, sess_guid=1
+2015-10-27 05:26:31.989 (17328): Session1: QueryExecute:
+2015-10-27 05:26:31.989 (17328): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:26:31.990 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:31.990 (17416): Session1: QueryExecute:
+2015-10-27 05:26:31.990 (17416): (show schemas)
+2015-10-27 05:26:31.991 (17416): Elapsed time:0.001 sec
+2015-10-27 05:26:31.991 (17416): Compilation time:0.000 sec
+2015-10-27 05:26:31.991 (17416): Execution time:0.001 sec
+2015-10-27 05:26:31.992 (17416): Session1: QueryExecute: OK rowset_guid=1 n_columns=1
+2015-10-27 05:26:31.992 (17416): Session1: QueryExecute:
+2015-10-27 05:26:31.992 (17416): (show tables [Extract])
+2015-10-27 05:26:31.995 (17416): Elapsed time:0.003 sec
+2015-10-27 05:26:31.995 (17416): Compilation time:0.000 sec
+2015-10-27 05:26:31.995 (17416): Execution time:0.003 sec
+2015-10-27 05:26:31.995 (17416): Session1: QueryExecute: OK rowset_guid=2 n_columns=1
+2015-10-27 05:26:31.996 (17416): Session1: QueryExecute:
+2015-10-27 05:26:31.996 (17416): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:26:32.027 (17416): Elapsed time:0.031 sec
+2015-10-27 05:26:32.027 (17416): Compilation time:0.018 sec
+2015-10-27 05:26:32.027 (17416): Execution time:0.013 sec
+2015-10-27 05:26:32.028 (17416): Session1: QueryExecute: OK rowset_guid=3 n_columns=18
+2015-10-27 05:26:32.032 (17416): Session1: QueryExecute:
+2015-10-27 05:26:32.032 (17416): (create schema [DE_Temp])
+2015-10-27 05:26:32.069 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:32.070 (17328): Session1: QueryExecute:
+2015-10-27 05:26:32.070 (17328): (create table [DE_Temp].[Extract])
+2015-10-27 05:26:32.115 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:32.115 (17416): Session1: QueryExecute:
+2015-10-27 05:26:32.115 (17416): (create column [DE_Temp].[Extract].[ACTVN_DT] ( ( "builtin" "date" ) ( "factory" "builtin" ) ( "ordinal" "0" ) ))
+2015-10-27 05:26:32.388 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:32.388 (17328): Session1: QueryExecute:
+2015-10-27 05:26:32.388 (17328): (create column [DE_Temp].[Extract].[BRND_ID] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "1" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:32.530 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:32.530 (17416): Session1: QueryExecute:
+2015-10-27 05:26:32.530 (17416): (create column [DE_Temp].[Extract].[DISTRO_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "2" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:32.699 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:32.699 (17328): Session1: QueryExecute:
+2015-10-27 05:26:32.699 (17328): (create column [DE_Temp].[Extract].[DISTRO_SALES_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "3" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:32.787 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:32.787 (17416): Session1: QueryExecute:
+2015-10-27 05:26:32.787 (17416): (create column [DE_Temp].[Extract].[DISTRO_CLUSTER] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "4" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:32.853 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:32.853 (17328): Session1: QueryExecute:
+2015-10-27 05:26:32.853 (17328): (create column [DE_Temp].[Extract].[TLD_NAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "5" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:33.091 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:33.092 (17416): Session1: QueryExecute:
+2015-10-27 05:26:33.092 (17416): (create column [DE_Temp].[Extract].[PROMO_PACKAGE_NAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "6" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:33.321 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:33.321 (17328): Session1: QueryExecute:
+2015-10-27 05:26:33.321 (17328): (create column [DE_Temp].[Extract].[HLR_REGION] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "7" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:33.461 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:33.461 (17416): Session1: QueryExecute:
+2015-10-27 05:26:33.461 (17416): (create column [DE_Temp].[Extract].[HLR_BRANCH] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "8" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:33.540 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:33.541 (17328): Session1: QueryExecute:
+2015-10-27 05:26:33.541 (17328): (create column [DE_Temp].[Extract].[HLR_CITY] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "9" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:33.640 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:33.640 (17416): Session1: QueryExecute:
+2015-10-27 05:26:33.640 (17416): (create column [DE_Temp].[Extract].[CLUSTER_TYPE] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "10" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:33.705 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:33.705 (17328): Session1: QueryExecute:
+2015-10-27 05:26:33.705 (17328): (create column [DE_Temp].[Extract].[CA_REGION] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "11" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:33.785 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:33.785 (17416): Session1: QueryExecute:
+2015-10-27 05:26:33.785 (17416): (create column [DE_Temp].[Extract].[CA_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "12" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:33.918 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:33.918 (17328): Session1: QueryExecute:
+2015-10-27 05:26:33.918 (17328): (create column [DE_Temp].[Extract].[CA_SALES_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "13" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:33.983 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:33.983 (17416): Session1: QueryExecute:
+2015-10-27 05:26:33.983 (17416): (create column [DE_Temp].[Extract].[CA_CLUSTER] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "14" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:34.047 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:34.047 (17328): Session1: QueryExecute:
+2015-10-27 05:26:34.047 (17328): (create column [DE_Temp].[Extract].[NUM_OF_SALES] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "15" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:34.168 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:34.169 (17416): Session1: QueryExecute:
+2015-10-27 05:26:34.169 (17416): (create column [DE_Temp].[Extract].[PNAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "16" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:34.258 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:34.258 (17328): Session1: QueryExecute:
+2015-10-27 05:26:34.258 (17328): (create column [DE_Temp].[Extract].[TIMESTAMP] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "17" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:26:34.369 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:34.501 (17416): Session1: QueryExecute:
+2015-10-27 05:26:34.501 (17416): (package)
+2015-10-27 05:26:34.501 (17416): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:26:34.582 (17416): PackageDatabase: finished
+2015-10-27 05:26:34.582 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:34.582 (17328): Session1: QueryExecute:
+2015-10-27 05:26:34.582 (17328): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:26:34.584 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:34.584 (17416): Session1: QueryExecute:
+2015-10-27 05:26:34.584 (17416): (show schemas)
+2015-10-27 05:26:34.585 (17416): Elapsed time:0.001 sec
+2015-10-27 05:26:34.585 (17416): Compilation time:0.000 sec
+2015-10-27 05:26:34.585 (17416): Execution time:0.001 sec
+2015-10-27 05:26:34.585 (17416): Session1: QueryExecute: OK rowset_guid=4 n_columns=1
+2015-10-27 05:26:34.586 (17416): Session1: QueryExecute:
+2015-10-27 05:26:34.586 (17416): (show tables [Extract])
+2015-10-27 05:26:34.590 (17416): Elapsed time:0.004 sec
+2015-10-27 05:26:34.590 (17416): Compilation time:0.000 sec
+2015-10-27 05:26:34.590 (17416): Execution time:0.004 sec
+2015-10-27 05:26:34.590 (17416): Session1: QueryExecute: OK rowset_guid=5 n_columns=1
+2015-10-27 05:26:34.591 (17416): Session1: QueryExecute:
+2015-10-27 05:26:34.591 (17416): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:26:34.621 (17416): Elapsed time:0.030 sec
+2015-10-27 05:26:34.621 (17416): Compilation time:0.017 sec
+2015-10-27 05:26:34.621 (17416): Execution time:0.013 sec
+2015-10-27 05:26:34.623 (17416): Session1: QueryExecute: OK rowset_guid=6 n_columns=18
+2015-10-27 05:26:34.625 (17416): Session1: QueryExecute:
+2015-10-27 05:26:34.625 (17416): (append table [Extract].[Extract] (table [Extract].[Extract]) (table [DE_Temp].[Extract]))
+2015-10-27 05:26:35.696 (17416): LogScopeTime: AppendTable,0,2015-10-27 05:26:34.6430,1.05
+2015-10-27 05:26:35.696 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:35.696 (17328): Session1: QueryExecute:
+2015-10-27 05:26:35.696 (17328): (drop schema [DE_Temp] cascade)
+2015-10-27 05:26:35.784 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:35.785 (17416): Session1: QueryExecute:
+2015-10-27 05:26:35.785 (17416): (package)
+2015-10-27 05:26:35.785 (17416): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:26:35.983 (17416): PackageDatabase: finished
+2015-10-27 05:26:35.984 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:35.984 (17328): Session1: QueryExecute:
+2015-10-27 05:26:35.984 (17328): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:26:35.987 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:35.987 (17416): Session1: QueryExecute:
+2015-10-27 05:26:35.987 (17416): (show schemas)
+2015-10-27 05:26:35.989 (17416): Elapsed time:0.002 sec
+2015-10-27 05:26:35.989 (17416): Compilation time:0.000 sec
+2015-10-27 05:26:35.990 (17416): Execution time:0.002 sec
+2015-10-27 05:26:35.990 (17416): Session1: QueryExecute: OK rowset_guid=7 n_columns=1
+2015-10-27 05:26:35.991 (17416): Session1: QueryExecute:
+2015-10-27 05:26:35.991 (17416): (show tables [Extract])
+2015-10-27 05:26:35.996 (17416): Elapsed time:0.005 sec
+2015-10-27 05:26:35.996 (17416): Compilation time:0.000 sec
+2015-10-27 05:26:35.996 (17416): Execution time:0.005 sec
+2015-10-27 05:26:35.996 (17416): Session1: QueryExecute: OK rowset_guid=8 n_columns=1
+2015-10-27 05:26:35.998 (17416): Session1: QueryExecute:
+2015-10-27 05:26:35.998 (17416): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:26:36.044 (17416): Elapsed time:0.046 sec
+2015-10-27 05:26:36.044 (17416): Compilation time:0.028 sec
+2015-10-27 05:26:36.044 (17416): Execution time:0.018 sec
+2015-10-27 05:26:36.046 (17416): Session1: QueryExecute: OK rowset_guid=9 n_columns=18
+2015-10-27 05:26:36.048 (17416): Session1: QueryExecute:
+2015-10-27 05:26:36.048 (17416): (alter column [Extract].[Extract].[ACTVN_DT] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.052 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:36.053 (17328): Session1: QueryExecute:
+2015-10-27 05:26:36.053 (17328): (alter column [Extract].[Extract].[BRND_ID] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.056 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:36.056 (17416): Session1: QueryExecute:
+2015-10-27 05:26:36.056 (17416): (alter column [Extract].[Extract].[DISTRO_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.059 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:36.059 (17328): Session1: QueryExecute:
+2015-10-27 05:26:36.059 (17328): (alter column [Extract].[Extract].[DISTRO_SALES_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.062 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:36.063 (17416): Session1: QueryExecute:
+2015-10-27 05:26:36.063 (17416): (alter column [Extract].[Extract].[DISTRO_CLUSTER] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.066 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:36.066 (17328): Session1: QueryExecute:
+2015-10-27 05:26:36.066 (17328): (alter column [Extract].[Extract].[TLD_NAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.069 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:36.069 (17416): Session1: QueryExecute:
+2015-10-27 05:26:36.069 (17416): (alter column [Extract].[Extract].[PROMO_PACKAGE_NAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.072 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:36.072 (17328): Session1: QueryExecute:
+2015-10-27 05:26:36.072 (17328): (alter column [Extract].[Extract].[HLR_REGION] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.076 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:36.076 (17416): Session1: QueryExecute:
+2015-10-27 05:26:36.076 (17416): (alter column [Extract].[Extract].[HLR_BRANCH] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.079 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:36.079 (17328): Session1: QueryExecute:
+2015-10-27 05:26:36.079 (17328): (alter column [Extract].[Extract].[HLR_CITY] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.082 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:36.082 (17416): Session1: QueryExecute:
+2015-10-27 05:26:36.082 (17416): (alter column [Extract].[Extract].[CLUSTER_TYPE] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.085 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:36.086 (17328): Session1: QueryExecute:
+2015-10-27 05:26:36.086 (17328): (alter column [Extract].[Extract].[CA_REGION] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.089 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:36.089 (17416): Session1: QueryExecute:
+2015-10-27 05:26:36.089 (17416): (alter column [Extract].[Extract].[CA_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.092 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:36.092 (17328): Session1: QueryExecute:
+2015-10-27 05:26:36.092 (17328): (alter column [Extract].[Extract].[CA_SALES_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.095 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:36.095 (17416): Session1: QueryExecute:
+2015-10-27 05:26:36.095 (17416): (alter column [Extract].[Extract].[CA_CLUSTER] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.100 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:36.100 (17328): Session1: QueryExecute:
+2015-10-27 05:26:36.100 (17328): (alter column [Extract].[Extract].[NUM_OF_SALES] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.103 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:36.103 (17416): Session1: QueryExecute:
+2015-10-27 05:26:36.103 (17416): (alter column [Extract].[Extract].[PNAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.106 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:36.107 (17328): Session1: QueryExecute:
+2015-10-27 05:26:36.107 (17328): (alter column [Extract].[Extract].[TIMESTAMP] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:26:36.110 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:36.110 (17416): Session1: QueryExecute:
+2015-10-27 05:26:36.110 (17416): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:26:36.121 (17416): Elapsed time:0.011 sec
+2015-10-27 05:26:36.121 (17416): Compilation time:0.007 sec
+2015-10-27 05:26:36.121 (17416): Execution time:0.005 sec
+2015-10-27 05:26:36.123 (17416): Session1: QueryExecute: OK rowset_guid=10 n_columns=18
+2015-10-27 05:26:36.124 (17416): Session1: QueryExecute:
+2015-10-27 05:26:36.124 (17416): (sort [Extract].[Extract] ( ( [ACTVN_DT] asc) ( [BRND_ID] asc) ( [DISTRO_AREA] asc) ( [DISTRO_SALES_AREA] asc) ( [DISTRO_CLUSTER] asc) ( [TLD_NAME] asc) ( [PROMO_PACKAGE_NAME] asc) ( [CLUSTER_TYPE] asc) ( [CA_CLUSTER] asc) ( [NUM_OF_SALES] asc) ( [PNAME] asc) ( [TIMESTAMP] asc) ) )
+2015-10-27 05:26:37.109 (17416): Session1: QueryExecute: OK
+2015-10-27 05:26:37.109 (17328): Session1: QueryExecute:
+2015-10-27 05:26:37.109 (17328): (package)
+2015-10-27 05:26:37.110 (17328): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:26:37.179 (17328): PackageDatabase: finished
+2015-10-27 05:26:37.180 (17328): Session1: QueryExecute: OK
+2015-10-27 05:26:37.180 (16476): tdeserver: close session, connection=tab.pipe://./pipe/{2BCAC161-76B9-47D2-A9FC-154A41FFF27C}, sess_guid=1
+2015-10-27 05:26:37.180 (20360): tdeserver: exit (0)
+2015-10-27 05:29:30.950 (18304): -----------------------------------------------------------------------------
+2015-10-27 05:29:30.950 (18304): Initializing fault reporting
+2015-10-27 05:29:30.950 (18304): Fault reporting log pathname: C:\Users\farisashim\Workspace\EISDataExtractor\tdeserver32-error000030e8.log
+2015-10-27 05:29:30.950 (18304): Initializing MiniDump
+2015-10-27 05:29:30.950 (18304): Loading 'DbgHelp.dll'
+2015-10-27 05:29:30.950 (18304): Loaded 'C:\Windows\SYSTEM32\DbgHelp.dll'
+2015-10-27 05:29:30.950 (18304):   Product Name: Microsoft® Windows® Operating System
+2015-10-27 05:29:30.950 (18304):   File Version: 6.3.9600.17787 (winblue_r10.150331-1500)
+2015-10-27 05:29:30.950 (18304):   Product Version: 6.3.9600.17787
+2015-10-27 05:29:30.950 (18304): Finding function 'MiniDumpWriteDump'
+2015-10-27 05:29:30.950 (18304): Success
+2015-10-27 05:29:30.951 (18304): Registering unhandled exception filter
+2015-10-27 05:29:30.951 (18304): -----------------------------------------------------------------------------
+2015-10-27 05:29:30.951 (18304): Machine Configuration
+2015-10-27 05:29:30.951 (18304):   Max Descriptors: -1
+2015-10-27 05:29:30.951 (18304): tdeserver: server listening for incoming connections at: tab.pipe://./pipe/{DB5235E5-B977-417B-8FAC-DDC064E3E805}
+2015-10-27 05:29:30.951 (18304): tdeserver: accepting new connection
+2015-10-27 05:29:30.951 (18304): tdeserver: new connection, connection=tab.pipe://./pipe/{DB5235E5-B977-417B-8FAC-DDC064E3E805}
+2015-10-27 05:29:30.951 (12532): beginthread: send, connection=tab.pipe://./pipe/{DB5235E5-B977-417B-8FAC-DDC064E3E805}
+2015-10-27 05:29:30.951 (12544): beginthread: recv, connection=tab.pipe://./pipe/{DB5235E5-B977-417B-8FAC-DDC064E3E805}
+2015-10-27 05:29:30.952 (12544): tdeserver: open session, connection=tab.pipe://./pipe/{DB5235E5-B977-417B-8FAC-DDC064E3E805}, sess_guid=1
+2015-10-27 05:29:30.952 (12712): Session1: QueryExecute:
+2015-10-27 05:29:30.952 (12712): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:29:30.953 (12712): Session1: QueryExecute: OK
+2015-10-27 05:29:30.954 (14664): Session1: QueryExecute:
+2015-10-27 05:29:30.954 (14664): (show schemas)
+2015-10-27 05:29:30.955 (14664): Elapsed time:0.001 sec
+2015-10-27 05:29:30.955 (14664): Compilation time:0.000 sec
+2015-10-27 05:29:30.955 (14664): Execution time:0.001 sec
+2015-10-27 05:29:30.955 (14664): Session1: QueryExecute: OK rowset_guid=1 n_columns=1
+2015-10-27 05:29:30.956 (14664): Session1: QueryExecute:
+2015-10-27 05:29:30.956 (14664): (show tables [Extract])
+2015-10-27 05:29:30.959 (14664): Elapsed time:0.003 sec
+2015-10-27 05:29:30.959 (14664): Compilation time:0.000 sec
+2015-10-27 05:29:30.959 (14664): Execution time:0.003 sec
+2015-10-27 05:29:30.959 (14664): Session1: QueryExecute: OK rowset_guid=2 n_columns=1
+2015-10-27 05:29:30.960 (14664): Session1: QueryExecute:
+2015-10-27 05:29:30.960 (14664): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:29:30.990 (14664): Elapsed time:0.030 sec
+2015-10-27 05:29:30.990 (14664): Compilation time:0.017 sec
+2015-10-27 05:29:30.990 (14664): Execution time:0.013 sec
+2015-10-27 05:29:30.992 (14664): Session1: QueryExecute: OK rowset_guid=3 n_columns=18
+2015-10-27 05:29:30.995 (14664): Session1: QueryExecute:
+2015-10-27 05:29:30.995 (14664): (create schema [DE_Temp])
+2015-10-27 05:29:31.037 (14664): Session1: QueryExecute: OK
+2015-10-27 05:29:31.037 (12712): Session1: QueryExecute:
+2015-10-27 05:29:31.037 (12712): (create table [DE_Temp].[Extract])
+2015-10-27 05:29:31.082 (12712): Session1: QueryExecute: OK
+2015-10-27 05:29:31.082 (14664): Session1: QueryExecute:
+2015-10-27 05:29:31.082 (14664): (create column [DE_Temp].[Extract].[ACTVN_DT] ( ( "builtin" "date" ) ( "factory" "builtin" ) ( "ordinal" "0" ) ))
+2015-10-27 05:29:31.250 (14664): Session1: QueryExecute: OK
+2015-10-27 05:29:31.251 (12712): Session1: QueryExecute:
+2015-10-27 05:29:31.251 (12712): (create column [DE_Temp].[Extract].[BRND_ID] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "1" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:31.459 (12712): Session1: QueryExecute: OK
+2015-10-27 05:29:31.460 (14664): Session1: QueryExecute:
+2015-10-27 05:29:31.460 (14664): (create column [DE_Temp].[Extract].[DISTRO_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "2" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:31.696 (14664): Session1: QueryExecute: OK
+2015-10-27 05:29:31.697 (12712): Session1: QueryExecute:
+2015-10-27 05:29:31.697 (12712): (create column [DE_Temp].[Extract].[DISTRO_SALES_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "3" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:31.778 (12712): Session1: QueryExecute: OK
+2015-10-27 05:29:31.778 (14664): Session1: QueryExecute:
+2015-10-27 05:29:31.778 (14664): (create column [DE_Temp].[Extract].[DISTRO_CLUSTER] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "4" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:32.001 (14664): Session1: QueryExecute: OK
+2015-10-27 05:29:32.001 (12712): Session1: QueryExecute:
+2015-10-27 05:29:32.001 (12712): (create column [DE_Temp].[Extract].[TLD_NAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "5" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:32.160 (12712): Session1: QueryExecute: OK
+2015-10-27 05:29:32.161 (14664): Session1: QueryExecute:
+2015-10-27 05:29:32.161 (14664): (create column [DE_Temp].[Extract].[PROMO_PACKAGE_NAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "6" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:32.331 (14664): Session1: QueryExecute: OK
+2015-10-27 05:29:32.332 (12712): Session1: QueryExecute:
+2015-10-27 05:29:32.332 (12712): (create column [DE_Temp].[Extract].[HLR_REGION] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "7" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:32.534 (12712): Session1: QueryExecute: OK
+2015-10-27 05:29:32.534 (14664): Session1: QueryExecute:
+2015-10-27 05:29:32.534 (14664): (create column [DE_Temp].[Extract].[HLR_BRANCH] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "8" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:32.618 (14664): Session1: QueryExecute: OK
+2015-10-27 05:29:32.619 (12712): Session1: QueryExecute:
+2015-10-27 05:29:32.619 (12712): (create column [DE_Temp].[Extract].[HLR_CITY] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "9" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:32.694 (12712): Session1: QueryExecute: OK
+2015-10-27 05:29:32.695 (14664): Session1: QueryExecute:
+2015-10-27 05:29:32.695 (14664): (create column [DE_Temp].[Extract].[CLUSTER_TYPE] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "10" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:32.763 (14664): Session1: QueryExecute: OK
+2015-10-27 05:29:32.763 (12712): Session1: QueryExecute:
+2015-10-27 05:29:32.763 (12712): (create column [DE_Temp].[Extract].[CA_REGION] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "11" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:32.832 (12712): Session1: QueryExecute: OK
+2015-10-27 05:29:32.832 (14664): Session1: QueryExecute:
+2015-10-27 05:29:32.832 (14664): (create column [DE_Temp].[Extract].[CA_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "12" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:32.952 (14664): Session1: QueryExecute: OK
+2015-10-27 05:29:32.952 (12712): Session1: QueryExecute:
+2015-10-27 05:29:32.952 (12712): (create column [DE_Temp].[Extract].[CA_SALES_AREA] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "13" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:33.047 (12712): Session1: QueryExecute: OK
+2015-10-27 05:29:33.047 (14664): Session1: QueryExecute:
+2015-10-27 05:29:33.047 (14664): (create column [DE_Temp].[Extract].[CA_CLUSTER] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "14" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:33.117 (14664): Session1: QueryExecute: OK
+2015-10-27 05:29:33.117 (12712): Session1: QueryExecute:
+2015-10-27 05:29:33.117 (12712): (create column [DE_Temp].[Extract].[NUM_OF_SALES] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "15" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:33.407 (12712): Session1: QueryExecute: OK
+2015-10-27 05:29:33.408 (14664): Session1: QueryExecute:
+2015-10-27 05:29:33.408 (14664): (create column [DE_Temp].[Extract].[PNAME] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "16" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:33.529 (14664): Session1: QueryExecute: OK
+2015-10-27 05:29:33.530 (12712): Session1: QueryExecute:
+2015-10-27 05:29:33.530 (12712): (create column [DE_Temp].[Extract].[TIMESTAMP] ( ( "collation" "en_GB" ) ( "compression" "heap" ) ( "factory" "varchar" ) ( "ordinal" "17" ) ( "scale" "1" ) ( "storagewidth" "8" ) ))
+2015-10-27 05:29:33.689 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:01.496 (14664): Session1: QueryExecute:
+2015-10-27 05:30:01.496 (14664): (package)
+2015-10-27 05:30:01.497 (14664): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:30:01.739 (14664): PackageDatabase: finished
+2015-10-27 05:30:01.740 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:01.740 (12712): Session1: QueryExecute:
+2015-10-27 05:30:01.740 (12712): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:30:01.742 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:01.743 (14664): Session1: QueryExecute:
+2015-10-27 05:30:01.743 (14664): (show schemas)
+2015-10-27 05:30:01.745 (14664): Elapsed time:0.002 sec
+2015-10-27 05:30:01.745 (14664): Compilation time:0.000 sec
+2015-10-27 05:30:01.745 (14664): Execution time:0.002 sec
+2015-10-27 05:30:01.745 (14664): Session1: QueryExecute: OK rowset_guid=4 n_columns=1
+2015-10-27 05:30:01.745 (14664): Session1: QueryExecute:
+2015-10-27 05:30:01.745 (14664): (show tables [Extract])
+2015-10-27 05:30:01.750 (14664): Elapsed time:0.005 sec
+2015-10-27 05:30:01.750 (14664): Compilation time:0.000 sec
+2015-10-27 05:30:01.750 (14664): Execution time:0.005 sec
+2015-10-27 05:30:01.751 (14664): Session1: QueryExecute: OK rowset_guid=5 n_columns=1
+2015-10-27 05:30:01.751 (14664): Session1: QueryExecute:
+2015-10-27 05:30:01.751 (14664): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:30:01.797 (14664): Elapsed time:0.046 sec
+2015-10-27 05:30:01.797 (14664): Compilation time:0.029 sec
+2015-10-27 05:30:01.797 (14664): Execution time:0.017 sec
+2015-10-27 05:30:01.799 (14664): Session1: QueryExecute: OK rowset_guid=6 n_columns=18
+2015-10-27 05:30:01.801 (14664): Session1: QueryExecute:
+2015-10-27 05:30:01.801 (14664): (append table [Extract].[Extract] (table [Extract].[Extract]) (table [DE_Temp].[Extract]))
+2015-10-27 05:30:02.861 (14664): LogScopeTime: AppendTable,0,2015-10-27 05:30:01.8230,1.04
+2015-10-27 05:30:02.861 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:02.861 (12712): Session1: QueryExecute:
+2015-10-27 05:30:02.861 (12712): (drop schema [DE_Temp] cascade)
+2015-10-27 05:30:02.954 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:02.954 (14664): Session1: QueryExecute:
+2015-10-27 05:30:02.954 (14664): (package)
+2015-10-27 05:30:02.955 (14664): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:30:03.014 (14664): PackageDatabase: finished
+2015-10-27 05:30:03.014 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:03.014 (12712): Session1: QueryExecute:
+2015-10-27 05:30:03.014 (12712): (database "C:\\Users\\farisashim\\Workspace\\EISDataExtractor\\tde/SalesPrepaid.tde")
+2015-10-27 05:30:03.016 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:03.016 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.016 (14664): (show schemas)
+2015-10-27 05:30:03.017 (14664): Elapsed time:0.001 sec
+2015-10-27 05:30:03.017 (14664): Compilation time:0.000 sec
+2015-10-27 05:30:03.017 (14664): Execution time:0.001 sec
+2015-10-27 05:30:03.018 (14664): Session1: QueryExecute: OK rowset_guid=7 n_columns=1
+2015-10-27 05:30:03.019 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.019 (14664): (show tables [Extract])
+2015-10-27 05:30:03.021 (14664): Elapsed time:0.003 sec
+2015-10-27 05:30:03.021 (14664): Compilation time:0.000 sec
+2015-10-27 05:30:03.022 (14664): Execution time:0.003 sec
+2015-10-27 05:30:03.022 (14664): Session1: QueryExecute: OK rowset_guid=8 n_columns=1
+2015-10-27 05:30:03.022 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.022 (14664): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:30:03.053 (14664): Elapsed time:0.031 sec
+2015-10-27 05:30:03.053 (14664): Compilation time:0.016 sec
+2015-10-27 05:30:03.053 (14664): Execution time:0.014 sec
+2015-10-27 05:30:03.055 (14664): Session1: QueryExecute: OK rowset_guid=9 n_columns=18
+2015-10-27 05:30:03.057 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.057 (14664): (alter column [Extract].[Extract].[ACTVN_DT] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.061 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:03.062 (12712): Session1: QueryExecute:
+2015-10-27 05:30:03.062 (12712): (alter column [Extract].[Extract].[BRND_ID] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.065 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:03.065 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.065 (14664): (alter column [Extract].[Extract].[DISTRO_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.068 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:03.068 (12712): Session1: QueryExecute:
+2015-10-27 05:30:03.068 (12712): (alter column [Extract].[Extract].[DISTRO_SALES_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.071 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:03.072 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.072 (14664): (alter column [Extract].[Extract].[DISTRO_CLUSTER] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.075 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:03.075 (12712): Session1: QueryExecute:
+2015-10-27 05:30:03.075 (12712): (alter column [Extract].[Extract].[TLD_NAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.078 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:03.078 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.078 (14664): (alter column [Extract].[Extract].[PROMO_PACKAGE_NAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.081 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:03.082 (12712): Session1: QueryExecute:
+2015-10-27 05:30:03.082 (12712): (alter column [Extract].[Extract].[HLR_REGION] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.085 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:03.085 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.085 (14664): (alter column [Extract].[Extract].[HLR_BRANCH] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.088 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:03.088 (12712): Session1: QueryExecute:
+2015-10-27 05:30:03.088 (12712): (alter column [Extract].[Extract].[HLR_CITY] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.091 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:03.092 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.092 (14664): (alter column [Extract].[Extract].[CLUSTER_TYPE] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.095 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:03.095 (12712): Session1: QueryExecute:
+2015-10-27 05:30:03.095 (12712): (alter column [Extract].[Extract].[CA_REGION] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.098 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:03.098 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.098 (14664): (alter column [Extract].[Extract].[CA_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.103 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:03.103 (12712): Session1: QueryExecute:
+2015-10-27 05:30:03.103 (12712): (alter column [Extract].[Extract].[CA_SALES_AREA] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.107 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:03.107 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.107 (14664): (alter column [Extract].[Extract].[CA_CLUSTER] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.110 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:03.110 (12712): Session1: QueryExecute:
+2015-10-27 05:30:03.110 (12712): (alter column [Extract].[Extract].[NUM_OF_SALES] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.113 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:03.113 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.113 (14664): (alter column [Extract].[Extract].[PNAME] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.116 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:03.117 (12712): Session1: QueryExecute:
+2015-10-27 05:30:03.117 (12712): (alter column [Extract].[Extract].[TIMESTAMP] ( ( "comparable" "comparable" ) ( "compression" "array" ) ( "storagewidth" "0" ) ) )
+2015-10-27 05:30:03.120 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:03.120 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.120 (14664): (top (table [Extract].[Extract]) () 0)
+2015-10-27 05:30:03.131 (14664): Elapsed time:0.011 sec
+2015-10-27 05:30:03.131 (14664): Compilation time:0.007 sec
+2015-10-27 05:30:03.131 (14664): Execution time:0.005 sec
+2015-10-27 05:30:03.133 (14664): Session1: QueryExecute: OK rowset_guid=10 n_columns=18
+2015-10-27 05:30:03.134 (14664): Session1: QueryExecute:
+2015-10-27 05:30:03.134 (14664): (sort [Extract].[Extract] ( ( [ACTVN_DT] asc) ( [BRND_ID] asc) ( [DISTRO_AREA] asc) ( [DISTRO_SALES_AREA] asc) ( [DISTRO_CLUSTER] asc) ( [TLD_NAME] asc) ( [PROMO_PACKAGE_NAME] asc) ( [CLUSTER_TYPE] asc) ( [CA_CLUSTER] asc) ( [NUM_OF_SALES] asc) ( [PNAME] asc) ( [TIMESTAMP] asc) ) )
+2015-10-27 05:30:04.611 (14664): LogScopeTime: Save::Build,2,2015-10-27 05:30:03.1410,1.47
+2015-10-27 05:30:04.611 (14664): Session1: QueryExecute: OK
+2015-10-27 05:30:04.612 (12712): Session1: QueryExecute:
+2015-10-27 05:30:04.612 (12712): (package)
+2015-10-27 05:30:04.612 (12712): PackageDatabase: in-place package of "C:\Users\farisashim\Workspace\EISDataExtractor\tde\SalesPrepaid.tde"
+2015-10-27 05:30:04.909 (12712): PackageDatabase: finished
+2015-10-27 05:30:04.909 (12712): Session1: QueryExecute: OK
+2015-10-27 05:30:04.910 (12544): tdeserver: close session, connection=tab.pipe://./pipe/{DB5235E5-B977-417B-8FAC-DDC064E3E805}, sess_guid=1
+2015-10-27 05:30:04.911 (18304): tdeserver: exit (0)
