@@ -13,6 +13,7 @@ public class StringDateUtils {
 	public static Date convertStringToDate(String dateTime){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATE_FORMAT);
         Date date = null;
+        System.out.println("date String = "+dateTime);
         try
         {
             date = simpleDateFormat.parse(dateTime);

@@ -25,7 +25,7 @@ import com.tableausoftware.DataExtract.Table;
 import com.tableausoftware.DataExtract.TableDefinition;
 import com.tableausoftware.DataExtract.Type;
 
-public class SalesPrepaidInsert extends LocalDBController {
+public class SalesPrepaid extends LocalDBController {
 	private static List<String> dateCreates = new ArrayList<>();
     private static final RestApiUtils s_restApiUtils = RestApiUtils.getInstance();
 
@@ -33,7 +33,7 @@ public class SalesPrepaidInsert extends LocalDBController {
 	private static TableDefinition makeTableDefinition() throws TableauException {
 		TableDefinition tableDef = new TableDefinition();
 		tableDef.setDefaultCollation(Collation.EN_GB);
-		tableDef.addColumn("ACTVN_DT", Type.DATE);
+		tableDef.addColumn("ACTVN_DT", Type.CHAR_STRING);
 		tableDef.addColumn("BRND_ID", Type.CHAR_STRING);
 		tableDef.addColumn("DISTRO_AREA", Type.CHAR_STRING);
 		tableDef.addColumn("DISTRO_SALES_AREA", Type.CHAR_STRING);
@@ -50,6 +50,7 @@ public class SalesPrepaidInsert extends LocalDBController {
 		tableDef.addColumn("CA_CLUSTER", Type.CHAR_STRING);
 		tableDef.addColumn("NUM_OF_SALES", Type.CHAR_STRING);
 		tableDef.addColumn("PNAME", Type.CHAR_STRING);
+//		tableDef.addColumn("NUM_OF_SUBS", Type.DOUBLE);
 		tableDef.addColumn("TIMESTAMP", Type.CHAR_STRING);
 		return tableDef;
 	}
@@ -58,39 +59,38 @@ public class SalesPrepaidInsert extends LocalDBController {
 	 * Insert Sales Prepaid
 	 */
 	public static void insertData(Table table) {
-		String quertySql = "SELECT * FROM dm_sales_prepaid";
+		String querySql = "SELECT * FROM dm_sales_prepaid";
 		Timestamp ts = getMaxDateTime("max_date.sales_prepaid");
 		try {
 			TableDefinition tableDef = table.getTableDefinition();
 			Row row = new Row(tableDef);
-			Class.forName(getPropertyValue("hadoop.driver"));
-			Connection connection = DriverManager.getConnection(getPropertyValue("hadoop.connection"),
-					getPropertyValue("hadoop.username"), getPropertyValue("hadoop.password"));
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/eis_data_extractor","root","");
 			Statement stat = connection.createStatement();
-			ResultSet rs = stat.executeQuery(quertySql);
+			ResultSet rs = stat.executeQuery(querySql);
 			while (rs.next()) {
-				if(StringDateUtils.convertStringToDate(rs.getString(18)).after(ts)){
-					row.setDate(0, Integer.parseInt(rs.getString(1).split("-")[0]), Integer.parseInt(rs.getString(1).split("-")[1]), Integer.parseInt(rs.getString(1).split("-")[2]));
-					row.setCharString(1, rs.getString(2));
-					row.setCharString(2, rs.getString(3));
-					row.setCharString(3, rs.getString(4));
-					row.setCharString(4, rs.getString(5));
-					row.setCharString(5, rs.getString(6));
-					row.setCharString(6, rs.getString(7));
-					row.setCharString(7, rs.getString(8));
-					row.setCharString(8, rs.getString(9));
-					row.setCharString(9, rs.getString(10));
-					row.setCharString(10, rs.getString(11));
-					row.setCharString(11, rs.getString(12));
-					row.setCharString(12, rs.getString(13));
-					row.setCharString(13, rs.getString(14));
-					row.setCharString(14, rs.getString(15));
-					row.setCharString(15, rs.getString(16));
-					row.setCharString(16, rs.getString(17));
-					row.setCharString(17, rs.getString(18));
-					dateCreates.add(rs.getString(18));
+//				if(StringDateUtils.convertStringToDate(rs.getString(18)).after(ts)){
+					row.setCharString(0, rs.getString("ACTVN_DT"));
+					row.setCharString(1, rs.getString("BRND_ID"));
+					row.setCharString(2, rs.getString("DISTRO_AREA"));
+					row.setCharString(3, rs.getString("DISTRO_SALES_AREA"));
+					row.setCharString(4, rs.getString("DISTRO_CLUSTER"));
+					row.setCharString(5, rs.getString("TLD_NAME"));
+					row.setCharString(6, rs.getString("PROMO_PACKAGE_NAME"));
+					row.setCharString(7, rs.getString("HLR_REGION"));
+					row.setCharString(8, rs.getString("HLR_BRANCH"));
+					row.setCharString(9, rs.getString("HLR_CITY"));
+					row.setCharString(10, rs.getString("CLUSTER_TYPE"));
+					row.setCharString(11, rs.getString("CA_REGION"));
+					row.setCharString(12, rs.getString("CA_AREA"));
+					row.setCharString(13, rs.getString("CA_SALES_AREA"));
+					row.setCharString(14, rs.getString("CA_CLUSTER"));
+					row.setCharString(15, rs.getString("NUM_OF_SALES"));
+					row.setCharString(16, rs.getString("PNAME"));
+					row.setCharString(17, rs.getString("TIMESTAMP"));
+//					dateCreates.add(rs.getString(18));
 					table.insert(row);
-				}
+//				}
 			}
 			System.out.println("Connection success");
 		} catch (ClassNotFoundException e) {
@@ -154,8 +154,9 @@ public class SalesPrepaidInsert extends LocalDBController {
 			printTableDefinition(tableDef);
 
 			insertData(table);
-			if(dateCreates!=null&&!dateCreates.isEmpty())
+			if(dateCreates!=null&&!dateCreates.isEmpty()){
 				updateProperty(StringDateUtils.convertDateToString(StringDateUtils.getMaxDate(dateCreates)), "max_date.sales_prepaid");
+			} 
 			publishDataSource(datasourceFileName);
 			
 		} catch (TableauException e) {

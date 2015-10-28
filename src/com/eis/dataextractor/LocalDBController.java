@@ -38,7 +38,7 @@ public class LocalDBController {
 			preparedStatement.setString(1, value);
 			preparedStatement.setString(2, name);
 			preparedStatement.executeUpdate();
-			System.out.println("Record is updated into Properties table!");
+			System.out.println("Max Date record is updated into Properties table!");
 			preparedStatement.close();
 		} catch (SQLException e) {
 			System.out.println(e.getMessage());

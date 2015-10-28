@@ -4,13 +4,15 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class JDBCConnectionTest {
+import com.eis.dataextractor.LocalDBController;
+
+public class JDBCConnectionTest extends LocalDBController {
 	public static void main(String[] args) {
 		try {
-			Class.forName("org.apache.hive.jdbc.HiveDriver");
+			Class.forName(getPropertyValue("hadoop.driver"));
 			Connection connection = null;
 			connection = DriverManager.getConnection(
-				"jdbc:hive2://192.168.0.101:22/hadooptest","mapr", "mapr2015");
+				getPropertyValue("hadoop.connection"),null , null);
 			connection.close();
 			System.out.println("Connection success");
 		} catch (ClassNotFoundException e) {
